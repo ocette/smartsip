@@ -1,0 +1,361 @@
+
+/* COULEURS - NE PAS MODIFIER */
+
+:root{
+    --bleuvert: #163E3B;
+    --vertpomme: #7DD68A;
+    --gris: #283036;
+    --noir: #131D1D;
+    --blanc: #FDFFFB;
+}
+
+/* TYPOGRAPHIES - NE PAS MODIFIER */
+
+
+#navbar {
+    font-family: 'montserrat';
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+h1 {
+    font-family: 'montserrat';
+    font-weight:700;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'montserrat';
+    font-weight:600;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: var(--blanc)
+}
+
+h3 {
+    font-family: 'montserrat';
+    font-weight:600;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: var(--blanc);
+}
+
+h4 {
+    font-family: 'montserrat';
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+h5{
+    font-family: 'montserrat';
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--vertpomme);
+}
+
+h6{
+    font-family: 'montserrat';
+    font-size: 1rem;
+    color: var(--blanc);
+    text-transform: uppercase;
+}
+
+
+p {
+    font-family: 'montserrat';
+    font-weight: 400;
+    font-size: 0.9rem;
+    text-transform: none;
+}
+
+/* BOUTON - NE PAS MODIFIER */
+
+.btn-acheter {
+
+    font-family: 'montserrat';
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    border-radius: 40px;
+    background-color: var(--bleuvert);
+    color: var(--vertpomme);
+    border: 2px var(--vertpomme) solid;
+    padding: 0.6rem 2rem;
+} 
+
+.lireplus {
+    color: var(--vertpomme);
+    font-family: 'montserrat';
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+/* NAVBAR - NE PAS MODIFIER */
+
+#navbar {
+    background-color: var(--noir);
+}
+
+.nav-link {
+    color: var(--blanc);
+}
+
+#navbarNav{
+    display: flex;
+    justify-content: end;
+}
+
+.navbar-toggler-icon {
+    background-image: url("../icon/icon-menu.svg");
+}
+
+.icon-panier {
+    order: 3;
+    margin-right: 10px;
+    margin-left: 50px;
+}
+
+#navbar a:hover{
+    color: var(--vertpomme);
+    text-decoration:underline;
+}
+
+.activecolor {
+    background-color: #7DD68A !important;
+    color: var(--noir) !important;
+    border-radius: 50px;
+}
+
+.bgnav {
+    background-color: black !important;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+@media only screen and (max-width: 576px){
+
+    .navbar-toggler {
+        order: 1;
+    }
+
+    .navbar-brand {
+        order: 2;
+    }
+
+    #navbarNavAltMarkup {
+        order: 4;
+    }
+
+    #navbar a {
+        padding-left: 15px;
+        }
+
+}
+
+article .btn-acheter:hover{
+    color:#163E3B;
+    background-color: var(--blanc);
+    border-color: #163E3B;
+}
+
+/* PAGE PRODUIT AUDE*/
+
+/* .sectionproduit{
+    width: 1440px;
+    height: 842px;
+} */
+
+header.main-aude {
+    background-color:var(--noir);
+    
+}
+
+header.main-aude  .sectionproduit h1{
+    color: var(--vertpomme);
+}
+
+header.main-aude  .sectionproduit h3{
+    color:var(--blanc);
+}
+
+.sectionproduit article p {
+    color: var(--blanc);
+    margin-bottom: 0;
+}
+
+.sectionproduit{
+    padding-top: 5rem;
+}
+
+.datas{
+    background-color:var(--gris);
+    border-radius: 20px;
+    color:var(--blanc);
+    padding-top:0.8em;
+    width: 516px;
+    height: 64px;
+
+}
+
+.sectionproduit img{
+    border-radius: 20px;
+
+}
+
+.fonctionnalites h5{
+    color:var(--vertpomme);
+    font-size: 1rem;
+}
+
+.fonctionnalites .icon img{
+    display:flex;
+    border-radius: 60px;
+    background-color: var(--blanc);
+    padding: 18px;
+    height: 70px;
+    width: 70px;
+}
+
+.sectionpartout .container{
+    padding-top: 3rem;
+}
+
+#partout img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+#temoignage p{
+    color: var(--blanc);
+}
+
+#temoignage .nom p{
+    color: var(--vertpomme);
+}
+
+#temoignage .avis{
+    background-color:var(--noir);
+    border-radius: 30px;
+    border:solid;
+    border-color: var(--vertpomme);
+    border-width: 3px;
+}
+
+.avis{
+    padding: 1em;
+
+}
+
+#temoignage {
+    padding: 0px 0px 80px;
+}
+   
+
+.fonctionnalites article img{
+    border-radius: 30px;
+    border:var(--blanc);
+}
+
+.sectionpartout{
+    background-color: var(--bleuvert);
+}
+
+.sectionpartout #partout img{
+    border-width: 3px;
+    border-radius: 20px;
+    border-color:var(--blanc);
+    border-style:solid;
+}
+
+.sectionpartout h2 {
+    color: var(--blanc);
+    padding-top: 50px;
+}
+
+/*CARD Z AUDE*/ 
+
+.card-z {
+    background-color: #163E3B;
+    color: var(--blanc);
+}
+
+.remplissageanalyse, .nettoyagepurification {    
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.transformationverre{
+    display: flex;
+    flex-direction: row;
+}
+
+.card-z article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--noir);
+    border-radius: 20px;
+    margin-top: 24px;
+    padding:0px;
+}
+
+.card-z article img {
+    height: 50vh;
+    object-fit: cover;
+    padding: 24px;
+    border-radius: 30px;
+}
+
+.card-z h2 {
+    margin-bottom: 20px;
+}
+
+.transformationverre img{
+    height: 50vh;
+    object-fit: cover;
+    padding: 24px;
+    border-radius: 30px;
+}
+
+.card-z article div {
+    padding: 24px;
+    height: 40vh;
+}
+
+.texte-remplissage, .texte-verre, .texte-nettoyage {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+/* FOOTER */
+
+
+footer{
+    background-color:black;
+    justify-content: center;
+}
+
+.nav-item a{
+color: var(--vertpomme);
+}
+
+footer p{
+    color: var(--blanc);
+} 
+
+footer h6 {
+    color: var(--blanc);
+} 
+
+@media only screen and (max-width: 768px){ 
+    footer .row{
+        text-align: center;
+
+    }
+    
+}

@@ -1,0 +1,355 @@
+
+/* COULEURS - NE PAS MODIFIER */
+
+:root{
+    --bleuvert: #163E3B;
+    --vertpomme: #7DD68A;
+    --gris: #283036;
+    --noir: #131D1D;
+    --blanc: #FDFFFB;
+}
+
+/* TYPOGRAPHIES - NE PAS MODIFIER */
+
+
+#navbar {
+    font-family: 'montserrat';
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+h1 {
+    font-family: 'montserrat';
+    font-weight:700;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'montserrat';
+    font-weight:600;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: var(--blanc);
+}
+
+h3 {
+    font-family: 'montserrat';
+    font-weight:600;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: var(--blanc);
+}
+
+h4 {
+    font-family: 'montserrat';
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+h5 {
+    font-family: 'montserrat';
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--vertpomme);
+}
+
+h6 {
+    font-family: 'montserrat';
+    font-size: 1rem;
+    color: var(--blanc);
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'montserrat';
+    font-weight: 400;
+    font-size: 0.9rem;
+    text-transform: none;
+}
+
+
+/* BOUTON - NE PAS MODIFIER */
+
+.bouton {
+
+    font-family: 'montserrat';
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    border-radius: 40px;
+    background-color: var(--bleuvert);
+    color: var(--vertpomme);
+    border: 2px var(--vertpomme) solid;
+    padding: 0.6rem 2rem;
+} 
+
+.lireplus {
+    color: var(--vertpomme);
+    font-family: 'montserrat';
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+/* NAVBAR - NE PAS MODIFIER */
+
+#navbar {
+    background-color: var(--noir);
+}
+
+.nav-link {
+    color: var(--blanc);
+}
+
+#navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-toggler-icon {
+    background-image: url("../icon/icon-menu.svg");
+}
+
+.icon-panier {
+    order: 3;
+    margin-right: 10px;
+    margin-left: 50px;
+}
+
+#navbar :hover {
+    
+    text-decoration: underline;
+}
+
+.activecolor {
+    background-color: #7DD68A !important;
+    color: var(--noir) !important;
+    border-radius: 50px;
+}
+
+.bgnav {
+    background-color: black !important;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+@media only screen and (max-width: 576px){
+
+    .navbar-toggler {
+        order: 1;
+    }
+
+    .navbar-brand {
+        order: 2;
+    }
+
+    #navbarNavAltMarkup {
+        order: 4;
+    }
+
+    #navbar a {
+        padding-left: 15px;
+        }
+
+}
+
+
+/* OCÉANE - DASHBOARD */
+
+#page-dashboard {
+    background-color: #163E3B;
+}
+
+#page-dashboard h1 {
+    color: var(--vertpomme);
+    text-align: center;
+    padding-top: 80px;
+    margin-bottom: 50px;
+}
+
+#page-dashboard h3 {
+    color: var(--blanc);
+    text-align: center;
+    margin-bottom: 80px;
+} 
+
+
+/* OCÉANE - CARD MES INFORMATIONS*/
+.fiche {
+    background-color: var(--noir);
+    border-radius: 20px;
+    margin: auto;
+    justify-content: space-evenly;
+    padding-bottom: 80px;
+    padding-top: 80px;
+    margin-bottom: 24px;   
+}
+
+.profil {
+    background-color: var(--gris);
+    border-radius: 20px;
+    height: 351px;
+    width: 600px;
+    padding: 40px;
+    
+}
+
+.img-modifier {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.profil article {
+    color: var(--blanc); 
+    display: flex;
+    flex-direction: row;
+}
+
+.bottle {
+    background-image: url(../img/img-bottle-white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 406px;
+    height: 351px;
+    border-radius: 20px;
+}
+
+/*OCÉANE - CARD MA CONSOMMATION*/
+
+.consommation {
+    border-radius: 20px;
+    background-color: var(--noir);
+    height: 429px;
+    width: 910px;
+    padding: 48px; 
+    margin-bottom: 24px;
+}
+
+.consommation h2 {
+    margin-bottom: 24px;
+    
+}
+
+.consommation p {
+    color: var(--blanc);
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 70px;
+}
+
+/*OCÉANE - CARD MON SUIVI*/
+
+.suivi {
+    border-radius: 20px;
+    background-color: var(--noir);
+    height: 872px;
+    width: 351px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 70px;
+
+}
+
+.suivi article {
+    border-radius: 20px;
+    background-color: var(--gris);
+    height: 150px ;
+    width: 270px;
+    margin: 24px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.suivi p {
+    color: var(--blanc);
+    margin-left: 20px;
+    margin-top: 13px;
+}
+
+.suivi h2 {
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 95px;
+
+}
+
+.icon-suivi {
+    border-radius: 50px;
+    background-color: var(--blanc);
+    padding: 10px ;
+    height: 50px;
+    width: 50px;
+}
+
+/*OCÉANE - CARD COMPOSITION BOISSON*/
+
+.composition {
+    border-radius: 20px;
+    background-color: var(--noir);
+    height: 419px; 
+    width: 910px;
+    padding: 24px; 
+}
+
+.composition p {
+    color: var(--blanc);
+    display: flex;
+    justify-content: flex-end;  
+}
+
+.composition h2 {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+/* OCÉANE - CARD PERFORMANCE HYDRTATION*/
+
+.hydratation {
+    background-color: var(--noir);
+    border-radius: 20px;
+    padding: 24px; 
+    margin-top: 24px; 
+    margin-bottom: 80px;
+    width: 99%;
+}
+
+.hydratation h2 {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.hydratation p {
+    color: var(--blanc);
+    margin-top: 24px;
+}
+
+/* FOOTER */
+
+
+footer{
+    background-color:black;
+    justify-content: center;
+
+}
+
+.nav-item a{
+color: var(--vertpomme);
+}
+
+footer p{
+    color: var(--blanc);
+}
+
+@media only screen and (max-width: 768px){ 
+    footer .row{
+        text-align: center;
+
+    }
+    
+}
+
+
